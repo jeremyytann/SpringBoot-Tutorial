@@ -11,22 +11,25 @@ import com.jeremyyytannn.tutorial.services.impl.ColourPrinterImpl;
 import com.jeremyyytannn.tutorial.services.impl.EnglishBluePrinter;
 import com.jeremyyytannn.tutorial.services.impl.EnglishGreenPrinter;
 import com.jeremyyytannn.tutorial.services.impl.EnglishRedPrinter;
+import com.jeremyyytannn.tutorial.services.impl.MalayBluePrinter;
+import com.jeremyyytannn.tutorial.services.impl.MalayGreenPrinter;
+import com.jeremyyytannn.tutorial.services.impl.MalayRedPrinter;
 
 @Configuration
 public class PrinterConfig {
   @Bean
   public BluePrinter bluePrinter() {
-    return new EnglishBluePrinter();
+    return new MalayBluePrinter();
   }
 
   @Bean
   public RedPrinter redPrinter() {
-    return new EnglishRedPrinter();
+    return new MalayRedPrinter();
   }
 
   @Bean
   public GreenPrinter greenPrinter() {
-    return new EnglishGreenPrinter();
+    return new MalayGreenPrinter();
   }
 
   @Bean
